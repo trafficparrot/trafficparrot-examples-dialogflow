@@ -1,0 +1,33 @@
+{
+  "id" : "9240f590-a152-4840-9702-d0d6d95bcce8",
+  "request" : {
+    "urlPath" : "google.cloud.dialogflow.cx.v3beta1.Sessions/StreamingDetectIntent",
+    "method" : "ANY",
+    "headers" : {
+      "Protocol" : {
+        "equalTo" : "GRPC"
+      }
+    }
+  },
+  "response" : {
+    "status" : 0,
+    "jsonBody" : {
+      "detectIntentResponse" : {
+        "queryResult" : {
+          "match" : {
+            "intent" : {
+              "displayName" : "Example Intent"
+            },
+            "confidence" : 0.75
+          },
+          "text": "{{ jsonPath request.body '$.queryInput.text.text' }}"
+        }
+      }
+    },
+    "headers" : {
+      "CallId" : "example-rpc-call-id",
+      "MessageNumber" : "1"
+    }
+  },
+  "uuid" : "9240f590-a152-4840-9702-d0d6d95bcce8"
+}

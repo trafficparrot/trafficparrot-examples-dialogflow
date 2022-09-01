@@ -1,0 +1,24 @@
+{
+  "id" : "1cce6bd7-ec1f-4a9c-9664-fafffd245018",
+  "request" : {
+    "urlPath" : "google.cloud.dialogflow.cx.v3beta1.Sessions/StreamingDetectIntent",
+    "method" : "ANY",
+    "headers" : {
+      "Protocol" : {
+        "equalTo" : "GRPC"
+      }
+    },
+    "bodyPatterns" : [ {
+      "contains" : "request-error"
+    } ]
+  },
+  "response" : {
+    "status" : 10,
+    "headers" : {
+      "CallId" : "example-rpc-call-id",
+      "MessageNumber" : "1"
+    }
+  },
+  "uuid" : "1cce6bd7-ec1f-4a9c-9664-fafffd245018",
+  "priority" : 1
+}
